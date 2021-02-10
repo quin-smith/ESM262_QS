@@ -1,0 +1,18 @@
+---
+title: "Assignment 1a"
+author: "Quin Smith"
+date: "2/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Why I am taking this course**
+
+I want to learn coding beyond the basics, get more of the fundamentals nailed down, and come out of Bren able to code efficiently and effectively.  In the workplace, I want to be either "the coding/data guy" or at least have the aptitude to provide assistance where necessary.  From previous jobs, I've seen that these sort of 'hard skills' make a person an indispensible part of the team. 
+
+**My data science background**
+
+I have some data science skills from an associate degree in GIS, where I took courses in spatial statistics and database management.  Two of my previous jobs have been data heavy: I worked for a mititgation monitoring project and a research project studying pollinators.  Last quarter, it was great jumping into ESM 206 and learning some fundamental R, data viz, and statistical skills.  This quarter, I'm concurrently enrolled in this class and ESM 244.
