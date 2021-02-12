@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Linkage Mapper Tools for ArcGIS to find linkages between core gorilla habitat areas, then define which of these areas are a priority for protection due to threat from future climate and land-use change. 
+### Linkage Mapper Tools for ArcGIS to find linkages between gorilla habitat areas, then define which of these linkages are a priority for protection due to threat from future climate and land-use change. 
 
 #### Contract
 
