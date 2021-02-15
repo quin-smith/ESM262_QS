@@ -360,17 +360,48 @@ summary {
 <li>Goal - Determine areas that best support movement of gorillas from one “core area” to another based on land-use resistance.</li>
 </ul>
 <p><strong>Module 1 - Build resistance map</strong></p>
-<p><em>Input</em> Raster map of land cover</p>
-<p><em>Parameters</em> Pixels of values classified to represent land cover types, classification schema, species-specific model parameters to estimate energetic costs of passing through each land cover type</p>
-<p><em>Output</em> Raster map of resistance values (each cell value representing energetic cost of gorillas passing through)</p>
+<p><em>Input</em></p>
+<ul>
+<li>Raster map of land cover</li>
+</ul>
+<p><em>Parameters</em></p>
+<ul>
+<li>Pixels of values classified to represent land cover types</li>
+<li>Classification schema</li>
+<li>Species-specific model parameters to estimate energetic costs of passing through each land cover type</li>
+</ul>
+<p><em>Output</em></p>
+<ul>
+<li>Raster map of resistance values (each cell value representing energetic cost of gorillas passing through)</li>
+</ul>
 <p><strong>Module 2 - Build connectivity map</strong></p>
-<p><em>Input</em> Raster map of resistance values</p>
-<p><em>Parameters</em> Shapefile of core areas (National Parks/protected areas) to clip/confine core areas, shapefile of corridor areas to clip/confine corridor areas, model scripts (python) that use cost-weighted distance analysis to create a connected path of least-cost pixels between core areas (least-cost corridors)</p>
-<p><em>Output</em> Raster map with connectivity/linkage quality values (each cell value representing energetic cost, classified as least to most cost, showing connections between core areas)</p>
+<p><em>Input</em></p>
+<ul>
+<li>Raster map of resistance values</li>
+</ul>
+<p><em>Parameters</em></p>
+<ul>
+<li>Shapefile of core areas (National Parks/protected areas) to clip/confine core areas</li>
+<li>Shapefile of corridor areas to clip/confine corridor areas</li>
+<li>Model scripts (python) that use cost-weighted distance analysis to create a connected path of least-cost pixels between core areas (least-cost corridors)</li>
+</ul>
+<p><em>Output</em></p>
+<ul>
+<li>Raster map with connectivity/linkage quality values (each cell value representing energetic cost, classified as least to most cost, showing connections between core areas)</li>
+</ul>
 <p><strong>Module 3 - Build hazard/priority map</strong></p>
-<p><em>Input</em> Raster map of connectivity/linkage quality values</p>
-<p><em>Parameters</em> Pixel values representing degree of change in climate/land use variables over areas into the future</p>
-<p><em>Output</em> Raster map showing areas in the linkages that are the most threatened, indicating priority for protection</p>
+<p><em>Input</em></p>
+<ul>
+<li>Raster map of connectivity/linkage quality values</li>
+</ul>
+<p><em>Parameters</em></p>
+<ul>
+<li>Pixel values representing degree of change in climate/land use variables over areas into the future</li>
+</ul>
+<p><em>Output</em></p>
+<ul>
+<li>Raster map showing areas in the linkages that are the most threatened, indicating priority for protection</li>
+</ul>
 </div>
 <div id="diagram" class="section level4">
 <h4>Diagram</h4>

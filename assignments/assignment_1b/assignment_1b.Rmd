@@ -17,27 +17,49 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Module 1 - Build resistance map**
 
-*Input* Raster map of land cover
+*Input* 
 
-*Parameters* Pixels of values classified to represent land cover types, classification schema, species-specific model parameters to estimate energetic costs of passing through each land cover type 
+- Raster map of land cover
 
-*Output* Raster map of resistance values (each cell value representing energetic cost of gorillas passing through)
+*Parameters*
+
+- Pixels of values classified to represent land cover types
+- Classification schema
+- Species-specific model parameters to estimate energetic costs of passing through each land cover type 
+
+*Output* 
+
+- Raster map of resistance values (each cell value representing energetic cost of gorillas passing through)
 
 **Module 2 - Build connectivity map**
 
-*Input* Raster map of resistance values
+*Input* 
 
-*Parameters* Shapefile of core areas (National Parks/protected areas) to clip/confine core areas, shapefile of corridor areas to clip/confine corridor areas, model scripts (python) that use cost-weighted distance analysis to create a connected path of least-cost pixels between core areas (least-cost corridors)
+- Raster map of resistance values
 
-*Output*  Raster map with connectivity/linkage quality values (each cell value representing energetic cost, classified as least to most cost, showing connections between core areas) 
+*Parameters* 
+
+- Shapefile of core areas (National Parks/protected areas) to clip/confine core areas
+- Shapefile of corridor areas to clip/confine corridor areas
+- Model scripts (python) that use cost-weighted distance analysis to create a connected path of least-cost pixels between core areas (least-cost corridors)
+
+*Output* 
+
+- Raster map with connectivity/linkage quality values (each cell value representing energetic cost, classified as least to most cost, showing connections between core areas) 
 
 **Module 3 - Build hazard/priority map**
 
-*Input* Raster map of connectivity/linkage quality values
+*Input* 
 
-*Parameters* Pixel values representing degree of change in climate/land use variables over areas into the future
+- Raster map of connectivity/linkage quality values
 
-*Output* Raster map showing areas in the linkages that are the most threatened, indicating priority for protection
+*Parameters* 
+
+- Pixel values representing degree of change in climate/land use variables over areas into the future
+
+*Output* 
+
+- Raster map showing areas in the linkages that are the most threatened, indicating priority for protection
 
 #### Diagram
 
