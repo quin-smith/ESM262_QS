@@ -1,0 +1,18 @@
+---
+title: "Assignment 2a"
+author: "Quin Smith"
+date: "2/17/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+```
+
+```{r}
+source(here("assignments/assignment_2a/R", "pb_calc.R"))
+
+pb_calc(m = 31752, V = )
+```
+

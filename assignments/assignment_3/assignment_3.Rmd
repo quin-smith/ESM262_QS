@@ -1,0 +1,52 @@
+---
+title: 'Assignment 3: Loops & case_when()'
+author: "Quin Smith"
+date: "2/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+### While loop: How many cups of brewed coffee would it take to die of a caffeine overdose? 
+
+Open the .Rmd and run `ld_50()` on your weight in **pounds** to find out!  Example below uses 170 lbs to demonstrate.
+
+This analysis is based on the LD50 of caffeine (the lethal dose amount of a substance that will kill 50% of the population).
+The LD50 of caffeine is 150 mg of caffeine per kg of body weight.
+ 
+```{r caffeine}
+#source ld_50()
+source(here("assignments/assignment_3/R", "ld_50.R"))
+
+ld_50(170)
+```
+
+### Case_when():  Function to see if a car likely be ticketed or not based on speed
+
+Run `speedr()` over a certain speed (mph) to see if you will/might get a ticket driving that fast in a 45 mph zone. 
+
+```{r}
+#source speedr()
+source(here("assignments/assignment_3/R", "speedr.R"))
+
+speedr(45)
+speedr(75)
+speedr(8)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
